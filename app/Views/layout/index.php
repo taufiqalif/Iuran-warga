@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="author" content="Taufiq Alif Rahman" />
   <title><?= $title; ?></title>
   <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
   <link href="<?= base_url(); ?>/css/styles.css" rel="stylesheet" />
@@ -75,7 +75,7 @@
       <footer class="py-4 bg-light mt-auto">
         <div class="container-fluid px-4">
           <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Your Website <?= date('Y'); ?></div>
+            <div class="text-muted">Copyright &copy; Taufiq Alif Rahman Website <?= date('Y'); ?></div>
           </div>
         </div>
       </footer>
