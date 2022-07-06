@@ -7,7 +7,20 @@
   <h1 class="mt-4"><?= $title; ?></h1>
   <div class="card mb-4">
     <div class="card-header">
-      <a href="/kas" class="btn btn-primary btn-sm">Kas Yang Belum Bayar</a>
+      <div class="row">
+        <div class="col">
+          <a href="/kas" class="btn btn-primary btn-sm">Kas Yang Belum Bayar</a>
+        </div>
+        <div class="col-md-3">
+          <h3 class="text-end">Total :</h3>
+        </div>
+        <div class="col-md-3">
+          <?php foreach ($total as $t => $values) : ?>
+          <input class="form-control" type="text" value="Rp. <?= $values->jumlah ?>000"
+            aria-label="readonly input example" readonly>
+          <?php endforeach; ?>
+        </div>
+      </div>
     </div>
     <div class="card-body">
       <table id="datatablesSimple">

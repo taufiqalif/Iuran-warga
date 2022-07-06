@@ -33,6 +33,14 @@ class IuranModel extends Model
     ])->first();
   }
 
+  public function total()
+  {
+    $builder = $this->table('iuran');
+    $builder->selectSum('jumlah');
+    $query = $builder->get();
+    return $query->getResult();
+  }
+
   public function getUpdate($id = false)
   {
 

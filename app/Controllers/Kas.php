@@ -29,6 +29,7 @@ class Kas extends BaseController
     $data = [
       'title' => 'Daftar Kas Lunas',
       'lunas' => $this->IuranModel->getLunas(),
+      'total' => $this->IuranModel->total(),
       // 'ambil' => $this->IuranModel->getAmbil(),
     ];
     return view('kas/lunas', $data);
