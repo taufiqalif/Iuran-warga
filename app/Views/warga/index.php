@@ -42,7 +42,7 @@
             <td>
               <a href="/daftar/edit/<?= $a['id']; ?>" class="btn btn-primary btn-sm">Edit</a>
               <a href="/daftar/hapus/<?= $a['id']; ?>" class="btn btn-danger btn-sm">Hapus</a>
-              <a href="#" class="btn btn-secondary btn-sm">Detail</a>
+              <a href="/daftar/detail/<?= $a['id']; ?>" class="btn btn-secondary btn-sm">Detail</a>
             </td>
           </tr>
           <?php endforeach; ?>

@@ -22,6 +22,15 @@ class WargaModel extends Model
     ])->first();
   }
 
+  // public function getDetail()
+  // {
+  //   $builder = $this->table('warga');
+  //   $builder->join('iuran', 'iuran.warga_id = warga.id');
+  //   $builder->select('id as warga_id');
+  //   $query = $builder->get();
+  //   return $query->getResultArray();
+  // }
+
   public function getOtomatis()
   {
     $kode = $this->db->table('warga')

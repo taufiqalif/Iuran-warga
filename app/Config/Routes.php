@@ -43,6 +43,7 @@ $routes->post('/daftar/save', 'Home::save');
 $routes->get('/daftar/hapus/(:any)', 'Home::hapus/$1');
 $routes->get('/daftar/edit/(:any)', 'Home::edit/$1');
 $routes->post('/daftar/update/(:any)', 'Home::update/$1');
+$routes->get('/daftar/detail/(:any)', 'Home::detail/$1');
 $routes->get('/kas/lunas', 'Kas::lunas');
 $routes->get('/kas/bayar', 'Kas::lunas');
 $routes->get('/kas/bayar/(:any)', 'Kas::edit/$1');

@@ -91,7 +91,7 @@ class Home extends BaseController
             ]
         ])) {
             $validation = \Config\Services::validation();
-            return redirect()->to('/warga/tambah')->withInput()->with('validation', $validation);
+            return redirect()->to('/daftar/tambah')->withInput()->with('validation', $validation);
         }
 
 
@@ -199,6 +199,18 @@ class Home extends BaseController
         session()
             ->setFlashdata('pesan', 'Data warga berhasil diubah');
         return redirect()->to('/daftar');
+    }
+
+
+    public function detail($id)
+    {
+        $warga = $this->WargaModel->find($id);
+        $data = [
+            'title' => 'Detail Data Warga',
+            'warga' => $warga,
+        ];
+
+        return view('warga/detail', $data);
     }
 
     public function hapus($id)
